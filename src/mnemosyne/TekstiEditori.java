@@ -297,5 +297,5 @@ public class TekstiEditori extends JFrame implements ActionListener {
     public static void main(String[] args) {
         TekstiEditori e = new TekstiEditori();
     }
-
+    //lisää testicommittointia
 }
