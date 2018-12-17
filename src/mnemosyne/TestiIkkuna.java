@@ -32,45 +32,15 @@ public class TestiIkkuna extends JFrame implements ActionListener {
         painikkeille.
          */
 
-        //luotu TekxtArea liitetään ScrollPaneen
-        //JScrollPane scpane = new JScrollPane(ta, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-
-        //JMenuBar mb = new JMenuBar();
-        
         JButton bt = new JButton();
 
-        //ft.setJMenuBar(mb);
-        
-        
-        
-        
-
-        //JMenu m1 = new JMenu("Tiedosto");
-
-        //JMenuItem mi4 = new JMenuItem("Tulosta");
-
-        //mi4.addActionListener(this);
-
-        //m1.add(mi4);
-
-        //mi4.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_P, ActionEvent.CTRL_MASK));
-
-        //mi4.addActionListener(this);
-
-        //mb.add(m1);
         ft.add(bt);
         bt.addActionListener(new Tulostus());
-        //ft.add(scpane);
+
         ft.setSize(500, 500);
         ft.show();
         ft.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-    }
-
-    
-    
-    public static void main(String[] args) {
-        TestiIkkuna e = new TestiIkkuna();
     }
 
     @Override
@@ -78,16 +48,17 @@ public class TestiIkkuna extends JFrame implements ActionListener {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    class Tulostus implements ActionListener{
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        
-        try {
-            ta.print();
-        } catch (PrinterException ex) {
-            Logger.getLogger(TestiIkkuna.class.getName()).log(Level.SEVERE, null, ex);
+    class Tulostus implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+            try {
+                ta.print();
+            } catch (PrinterException ex) {
+                Logger.getLogger(TestiIkkuna.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
     }
-    }
-    
+
 }
