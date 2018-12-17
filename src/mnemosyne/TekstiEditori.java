@@ -117,7 +117,10 @@ public class TekstiEditori extends JFrame implements ActionListener {
         JMenuItem mi12 = new JMenuItem("Sininen");
         JMenuItem mi13 = new JMenuItem("Punainen");
         JMenuItem mi14 = new JMenuItem("Musta");
-
+        
+        mi1.addActionListener(this);
+        mi2.addActionListener(this);
+        mi3.addActionListener(this);
         mi7.addActionListener(this);
         mi8.addActionListener(this);
         mi9.addActionListener(this);
