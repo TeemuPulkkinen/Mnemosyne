@@ -11,8 +11,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
@@ -214,7 +212,7 @@ public class TekstiEditori extends JFrame implements ActionListener {
                 }
             } // jos toiminto perutaan
             else {
-                JOptionPane.showMessageDialog(f, "Käyttäjä peruutti toiminnon.");
+                //JOptionPane.showMessageDialog(f, "Käyttäjä peruutti toiminnon.");
             }
 
         } else if (s.equals("Avaa")) {
@@ -253,7 +251,7 @@ public class TekstiEditori extends JFrame implements ActionListener {
                 }
             } //jos operaatio perutaan
 
-            JOptionPane.showMessageDialog(f, "Käyttäjä peruutti toiminnon.");
+            //JOptionPane.showMessageDialog(f, "Käyttäjä peruutti toiminnon.");
 
         } else if (s.equals("Uusi")) {
             ta.setText("");
