@@ -275,9 +275,10 @@ public class TekstiEditori extends JFrame implements ActionListener {
             System.exit(0);
         }
     }
+
     /* Tulostamisella on oma koodin pätkä koska se nyt vaan toimi näin. Ensi kerralla yritän varmaan tehdä
     koko homman olioilla niin voisi sujua helpommin tähän tapaan.
-    */
+     */
     class Tulostus implements ActionListener {
 
         @Override
@@ -286,7 +287,9 @@ public class TekstiEditori extends JFrame implements ActionListener {
             try {
                 ta.print();
             } catch (PrinterException ex) {
-                Logger.getLogger(TestiIkkuna.class.getName()).log(Level.SEVERE, null, ex);
+
+                
+                JOptionPane.showMessageDialog(f, "Käyttäjä peruutti toiminnon.");
             }
         }
     }
